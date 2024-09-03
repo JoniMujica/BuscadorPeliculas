@@ -34,7 +34,9 @@ export const helpHttp = () => {
   
     const get = (url, options = {}) => customFetch(url, options);
   
-    const post = (url, options = {}) => {
+    /*ESTO ES PARA UN CRUD! */
+    
+    /*const post = (url, options = {}) => {
       options.method = "POST";
       return customFetch(url, options);
     };
@@ -47,12 +49,9 @@ export const helpHttp = () => {
     const del = (url, options = {}) => {
       options.method = "DELETE";
       return customFetch(url, options);
-    };
+    };*/
   
     return {
-      get,
-      post,
-      put,
-      del,
+      get
     };
   };

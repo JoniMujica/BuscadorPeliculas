@@ -33,9 +33,12 @@ function App() {
    }*/
   return (
     <>
-      <h1>Busqueda de peliculas</h1>
-      <Formulario change={HandleChange} /*changeL={HandleChangeLanguage}*/ texto={texto} />
-      {!peliculas? <h1>Sin Datos</h1> : <Items resultados={peliculas} /> }
+      <div id="contenedor">
+        <h1>Busqueda de peliculas</h1>
+        <Formulario change={HandleChange} /*changeL={HandleChangeLanguage}*/ texto={texto} />
+        {console.log(peliculas)}
+        {!peliculas? <h1>Sin Datos</h1> : <Items resultados={peliculas} /> }
+      </div>
     </>
   )
 }
